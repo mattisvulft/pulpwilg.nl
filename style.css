@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+body {background-color: Brown;
+	min-height: 100vh;
+}
+
+h1 {
+color:Azure;
+text-align:center;
+font-family: copperplate;
+font-size: 10vw;
+}
+
+.U {
+color:Black;
+text-align:center;
+font-size: 3vw;
+font-family: "Share Tech", copperplate;}
+
+p{
+color:Black;
+text-align:center;
+font-size: 3vw;
+font-family: "Share Tech", copperplate;
+}
+
+.center {
+	  display: flex;
+	 justify-content: center;
+	  align-items: center;
+	align-content: center;
+	height: 100%;
+	line-height: 220%;
+
+} 
+
+.containerdiv {
+	height: 90vh;
+	}
+
+
