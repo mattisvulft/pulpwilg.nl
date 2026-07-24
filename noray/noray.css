@@ -5,7 +5,10 @@
 --ooggrijs: #1F172C;
 --oogwit: #A48F97;
 
-
+html {
+height: 100%;
+margin: 0;
+	}
 
 body {
 	min-height:100dvh;
@@ -14,12 +17,12 @@ body {
 	border-color: var(--burbl);
 	margin: 1%;
 	padding: 0px;
-	overflow: scroll;
+	overflow: auto;
 }
 
 h1 {
 font-family: monospace;
-font-size: 10vw;
+font-size: 8vw;
 color: var(--oogwit); 
 text-align: center; 
 text-decoration-line: underline; 
@@ -41,19 +44,46 @@ color: var(--oogwit);
 text-align: center; 
 }
 
+	
+input, textarea {
+	background-color: var(--ooggrijs);
+	border-style:double;
+	border-width:thick;
+	border-radius: 20vw 8vw;
+	border-color: var(--burbl);
+	color: var(--oogwit); 
+	text-align: center;
+	width:70vw;
+	min-height:5vh;
+	font-size: 3vw;
+	font-family: monospace, sans serif;
+	margin:	1vh 0vw 5vh;
+}
 
 .sumoknop {
 width: 90%;
-height: 80%;
+min-height:40dvh;
+height: 100%;
 color: var(--oogwit);
 font-size: 12vh;
 font-family: copperplate;
-background-image: url("sumo.png");
+background-image: url("/images/sumo_mini.png");
 background-repeat: space;
 background-color: var(--grijs);
 border-width: thick;
-border-color: var(--grijs);
+border-color: var(--oogwit);
 }
+
+.centeryes {
+	  display: flex;
+	 justify-content: center;
+	  align-items: center;
+	align-content: center;
+	min-height: 40dvh;
+	height: 100%;
+	width: 100%;
+
+	}
 
 .label {
 	font-family: copperplate;
@@ -72,37 +102,12 @@ border-color: var(--grijs);
 	height: 100%;
 	}
 
-.centeryes {
-	  display: flex;
-	 justify-content: center;
-	  align-items: center;
-	align-content: center;
-	height: 90%;
-	position: sticky;
-	}
-
 .containerdiv {
-height:100%;
+min-height:100dvh;
 display: flex;
 flex-direction: column;
 	}
 
-
-
-input, textarea {
-	background-color: var(--ooggrijs);
-	border-style:double;
-	border-width:thick;
-	border-radius: 20vw 8vw;
-	border-color: var(--burbl);
-	color: var(--oogwit); 
-	text-align: center;
-	width:70vw;
-	min-height:5vh;
-	font-size: 3vw;
-	font-family: monospace, sans serif;
-	margin:	1vh 0vw 5vh;
-}
 
    .footer{ 
        position: fixed;     
@@ -114,10 +119,20 @@ input, textarea {
 	.header {
 	position: relative;
 	text-align: center;
-	top: 0px;
+	top: 10px;
 	width: 100%;
 	margin-bottom: 30px;
 	border-bottom: 3px solid var(--ooggrijs)
+	}
+
+	.onderheader {
+	position: relative;
+	text-align: center;
+	top: 0px;
+	width: 100%;
+	margin-bottom: 30px;
+	border-bottom: 3px solid var(--ooggrijs);
+	padding: 0;
 	}
 
 .relative {
@@ -128,6 +143,6 @@ display: inline-block;
 height: 10vh;
 	}
 
-}
 
+}
 
